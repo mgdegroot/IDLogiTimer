@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutSplash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nl.bittrail.idlogitimer.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="585dp"
+        android:layout_height="451dp"
+        app:srcCompat="@drawable/ic_id_logistics_logo"
+         />
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/guideline"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_begin="20dp" />-->
+
+    <TextView
+        android:id="@+id/lblAppName"
+        android:text="ID Logi timer"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/lblCopyright"
+        android:text="Author: Marcel de Groot\nE-mail: mg.degroot@bit-trail.nl\n\u00A9 2018 Marcel de Groot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblAppName"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

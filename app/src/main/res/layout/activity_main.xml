@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nl.bittrail.idlogitimer.MainActivity">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="nl.bittrail.idlogitimer.MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnNewSubject"
+        android:src="@drawable/ic_person_add_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:id="@+id/btnRedrawLayout"
+        android:src="@drawable/ic_autorenew_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintLeft_toRightOf="@id/btnNewSubject"
+        />
+
+    <ImageButton
+        android:id="@+id/btnSaveMeasurements"
+        android:src="@drawable/ic_save_black_48dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintLeft_toRightOf="@id/btnRedrawLayout"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnNewSubject"
+        />
+    <Switch
+        android:id="@+id/switchLockUI"
+        android:text="@string/switchLockUI_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:showText="false"
+        app:layout_constraintLeft_toRightOf="@id/btnSaveMeasurements"
+        app:layout_constraintBottom_toBottomOf="@id/btnNewSubject"
+        />
+    <ImageButton
+        android:id="@+id/btnDbg"
+        android:src="@drawable/ic_id_logistics_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/switchLockUI"
+        app:layout_constraintBottom_toBottomOf="@id/btnNewSubject"
+        />
+
+    <ListView
+        android:id="@+id/lvSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/btnNewSubject"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        />
+    <!--<ListView-->
+        <!--android:id="@+id/lvSubjects"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/btnNewSubject"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--/>-->
+    <!--<View-->
+        <!--android:id="@+id/divider"-->
+        <!--android:layout_width="585dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="?android:attr/listDivider"-->
+        <!--tools:layout_editor_absoluteX="8dp"-->
+        <!--tools:layout_editor_absoluteY="808dp" />-->
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
